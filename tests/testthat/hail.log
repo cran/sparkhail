@@ -1,0 +1,594 @@
+2019-10-01 10:56:58 Hail: INFO: Hail temporary directory: file:/tmp/hail.uOLH8i7hzbxW
+2019-10-01 10:56:58 Hail: INFO: SparkUI: http://localhost:4040
+2019-10-01 10:56:58 Hail: INFO: Running Hail version 0.2.15-aa0fb6174ba5
+2019-10-01 10:56:58 MemoryStore: INFO: Block broadcast_0 stored as values in memory (estimated size 33.5 KB, free 912.3 MB)
+2019-10-01 10:56:59 MemoryStore: INFO: Block broadcast_0_piece0 stored as bytes in memory (estimated size 2.9 KB, free 912.3 MB)
+2019-10-01 10:56:59 BlockManagerInfo: INFO: Added broadcast_0_piece0 in memory on localhost:33217 (size: 2.9 KB, free: 912.3 MB)
+2019-10-01 10:56:59 SparkContext: INFO: Created broadcast 0 from broadcast at SparkBackend.scala:26
+2019-10-01 10:56:59 MemoryStore: INFO: Block broadcast_1 stored as values in memory (estimated size 1643.2 KB, free 910.7 MB)
+2019-10-01 10:56:59 MemoryStore: INFO: Block broadcast_1_piece0 stored as bytes in memory (estimated size 108.4 KB, free 910.6 MB)
+2019-10-01 10:56:59 BlockManagerInfo: INFO: Added broadcast_1_piece0 in memory on localhost:33217 (size: 108.4 KB, free: 912.2 MB)
+2019-10-01 10:56:59 SparkContext: INFO: Created broadcast 1 from broadcast at SparkBackend.scala:26
+2019-10-01 10:56:59 MemoryStore: INFO: Block broadcast_2 stored as values in memory (estimated size 8.7 KB, free 910.5 MB)
+2019-10-01 10:56:59 MemoryStore: INFO: Block broadcast_2_piece0 stored as bytes in memory (estimated size 1000.0 B, free 910.5 MB)
+2019-10-01 10:56:59 BlockManagerInfo: INFO: Added broadcast_2_piece0 in memory on localhost:33217 (size: 1000.0 B, free: 912.2 MB)
+2019-10-01 10:56:59 SparkContext: INFO: Created broadcast 2 from broadcast at SparkBackend.scala:26
+2019-10-01 10:57:06 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:24 root: INFO: optimize: before: IR size 1: 
+(MatrixRead None False False "{\"name\":\"MatrixNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt\",\"_spec\":null}")
+2019-10-01 10:57:24 root: INFO: optimize: after: IR size 1:
+(MatrixRead None False False "{\"name\":\"MatrixNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt\",\"_spec\":null}")
+2019-10-01 10:57:24 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:24 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:24 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:24 root: INFO: optimize: before: IR size 9: 
+(TableZipUnchecked
+  (TableMapGlobals
+    (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/rows\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[locus,alleles],row:Struct{locus:Locus(GRCh37),alleles:Array[String],rsid:String,qual:Float64,filters:Set[String],info:Struct{AC:Array[Int32],AF:Array[Float64],AN:Int32,BaseQRankSum:Float64,ClippingRankSum:Float64,DP:Int32,DS:Boolean,FS:Float64,HaplotypeScore:Float64,InbreedingCoeff:Float64,MLEAC:Array[Int32],MLEAF:Array[Float64],MQ:Float64,MQ0:Int32,MQRankSum:Float64,QD:Float64,ReadPosRankSum:Float64,set:String}}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}")
+    (InsertFields
+      (Ref global)
+      None
+      (__cols
+        (GetField rows
+          (TableCollect
+            (TableRead Table{global:Struct{},key:[],row:Struct{s:String}} False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/cols\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[s],row:Struct{s:String}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[284]}}}}"))))))
+  (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/entries\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[],row:Struct{`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`:Array[Struct{GT:Call,AD:Array[+Int32],DP:Int32,GQ:Int32,PL:Array[+Int32]}]}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}"))
+2019-10-01 10:57:24 root: INFO: optimize: after: IR size 9:
+(TableZipUnchecked
+  (TableMapGlobals
+    (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/rows\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[locus,alleles],row:Struct{locus:Locus(GRCh37),alleles:Array[String],rsid:String,qual:Float64,filters:Set[String],info:Struct{AC:Array[Int32],AF:Array[Float64],AN:Int32,BaseQRankSum:Float64,ClippingRankSum:Float64,DP:Int32,DS:Boolean,FS:Float64,HaplotypeScore:Float64,InbreedingCoeff:Float64,MLEAC:Array[Int32],MLEAF:Array[Float64],MQ:Float64,MQ0:Int32,MQRankSum:Float64,QD:Float64,ReadPosRankSum:Float64,set:String}}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}")
+    (InsertFields
+      (Ref global)
+      None
+      (__cols
+        (GetField rows
+          (TableCollect
+            (TableRead Table{global:Struct{},key:[],row:Struct{s:String}} False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/cols\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[s],row:Struct{s:String}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[284]}}}}"))))))
+  (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/entries\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[],row:Struct{`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`:Array[Struct{GT:Call,AD:Array[+Int32],DP:Int32,GQ:Int32,PL:Array[+Int32]}]}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}"))
+2019-10-01 10:57:24 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C0.<init> instruction count: 3
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C0.apply instruction count: 18
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C0.apply instruction count: 12
+2019-10-01 10:57:24 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C1.<init> instruction count: 3
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C1.apply instruction count: 43
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C1.apply instruction count: 12
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C1.method1 instruction count: 594
+2019-10-01 10:57:24 root: INFO: is/hail/codegen/generated/C1.method2 instruction count: 997
+2019-10-01 10:57:24 MemoryStore: INFO: Block broadcast_3 stored as values in memory (estimated size 240.0 KB, free 910.3 MB)
+2019-10-01 10:57:24 MemoryStore: INFO: Block broadcast_3_piece0 stored as bytes in memory (estimated size 23.3 KB, free 910.3 MB)
+2019-10-01 10:57:24 BlockManagerInfo: INFO: Added broadcast_3_piece0 in memory on localhost:33217 (size: 23.3 KB, free: 912.2 MB)
+2019-10-01 10:57:24 SparkContext: INFO: Created broadcast 3 from broadcast at HailContext.scala:431
+2019-10-01 10:57:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C2.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C2.apply instruction count: 18
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C2.apply instruction count: 12
+2019-10-01 10:57:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C3.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C3.apply instruction count: 88
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C3.apply instruction count: 12
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C4.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C4.apply instruction count: 88
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C4.apply instruction count: 12
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C5.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C5.apply instruction count: 51
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C5.apply instruction count: 13
+2019-10-01 10:57:25 SparkContext: INFO: Starting job: collect at RVD.scala:703
+2019-10-01 10:57:25 DAGScheduler: INFO: Got job 0 (collect at RVD.scala:703) with 1 output partitions
+2019-10-01 10:57:25 DAGScheduler: INFO: Final stage: ResultStage 0 (collect at RVD.scala:703)
+2019-10-01 10:57:25 DAGScheduler: INFO: Parents of final stage: List()
+2019-10-01 10:57:25 DAGScheduler: INFO: Missing parents: List()
+2019-10-01 10:57:25 DAGScheduler: INFO: Submitting ResultStage 0 (MapPartitionsRDD[8] at mapPartitions at ContextRDD.scala:190), which has no missing parents
+2019-10-01 10:57:25 MemoryStore: INFO: Block broadcast_4 stored as values in memory (estimated size 7.2 KB, free 910.3 MB)
+2019-10-01 10:57:25 MemoryStore: INFO: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.1 KB, free 910.3 MB)
+2019-10-01 10:57:25 BlockManagerInfo: INFO: Added broadcast_4_piece0 in memory on localhost:33217 (size: 4.1 KB, free: 912.2 MB)
+2019-10-01 10:57:25 SparkContext: INFO: Created broadcast 4 from broadcast at DAGScheduler.scala:1161
+2019-10-01 10:57:25 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[8] at mapPartitions at ContextRDD.scala:190) (first 15 tasks are for partitions Vector(0))
+2019-10-01 10:57:25 TaskSchedulerImpl: INFO: Adding task set 0.0 with 1 tasks
+2019-10-01 10:57:25 TaskSetManager: INFO: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 7653 bytes)
+2019-10-01 10:57:25 Executor: INFO: Running task 0.0 in stage 0.0 (TID 0)
+2019-10-01 10:57:25 Executor: INFO: Fetching spark://localhost:46327/jars/sparkhail-2.4-2.11.jar with timestamp 1569938207308
+2019-10-01 10:57:25 TransportClientFactory: INFO: Successfully created connection to localhost/127.0.0.1:46327 after 25 ms (0 ms spent in bootstraps)
+2019-10-01 10:57:25 Utils: INFO: Fetching spark://localhost:46327/jars/sparkhail-2.4-2.11.jar to /tmp/spark-c127767c-f2b2-4761-bcc0-970c4b549359/userFiles-3078c108-98ae-4089-bc5a-58581f7fcceb/fetchFileTemp1155608038763130550.tmp
+2019-10-01 10:57:25 Executor: INFO: Adding file:/tmp/spark-c127767c-f2b2-4761-bcc0-970c4b549359/userFiles-3078c108-98ae-4089-bc5a-58581f7fcceb/sparkhail-2.4-2.11.jar to class loader
+2019-10-01 10:57:25 Executor: INFO: Fetching spark://localhost:46327/jars/hail-all-spark.jar with timestamp 1569938207309
+2019-10-01 10:57:25 Utils: INFO: Fetching spark://localhost:46327/jars/hail-all-spark.jar to /tmp/spark-c127767c-f2b2-4761-bcc0-970c4b549359/userFiles-3078c108-98ae-4089-bc5a-58581f7fcceb/fetchFileTemp3539293229889310696.tmp
+2019-10-01 10:57:25 Executor: INFO: Adding file:/tmp/spark-c127767c-f2b2-4761-bcc0-970c4b549359/userFiles-3078c108-98ae-4089-bc5a-58581f7fcceb/hail-all-spark.jar to class loader
+2019-10-01 10:57:25 Executor: INFO: Fetching spark://localhost:46327/jars/sparklyr-2.3-2.11.jar with timestamp 1569938207309
+2019-10-01 10:57:25 Utils: INFO: Fetching spark://localhost:46327/jars/sparklyr-2.3-2.11.jar to /tmp/spark-c127767c-f2b2-4761-bcc0-970c4b549359/userFiles-3078c108-98ae-4089-bc5a-58581f7fcceb/fetchFileTemp231448323619800788.tmp
+2019-10-01 10:57:25 Executor: INFO: Adding file:/tmp/spark-c127767c-f2b2-4761-bcc0-970c4b549359/userFiles-3078c108-98ae-4089-bc5a-58581f7fcceb/sparklyr-2.3-2.11.jar to class loader
+2019-10-01 10:57:25 Executor: INFO: Finished task 0.0 in stage 0.0 (TID 0). 6552 bytes result sent to driver
+2019-10-01 10:57:25 TaskSetManager: INFO: Finished task 0.0 in stage 0.0 (TID 0) in 355 ms on localhost (executor driver) (1/1)
+2019-10-01 10:57:25 TaskSchedulerImpl: INFO: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-10-01 10:57:25 DAGScheduler: INFO: ResultStage 0 (collect at RVD.scala:703) finished in 0,438 s
+2019-10-01 10:57:25 DAGScheduler: INFO: Job 0 finished: collect at RVD.scala:703, took 0,494958 s
+2019-10-01 10:57:25 root: INFO: optimize (Compile): before: IR size 6: 
+(MakeTuple
+  (InsertFields
+    (Ref global)
+    None
+    (__cols
+      (GetField rows
+        (GetField __iruid_1
+          (Ref __iruid_0))))))
+2019-10-01 10:57:25 root: INFO: optimize (Compile): after: IR size 6:
+(MakeTuple
+  (InsertFields
+    (Ref global)
+    None
+    (__cols
+      (GetField rows
+        (GetField __iruid_1
+          (Ref __iruid_0))))))
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C6.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C6.apply instruction count: 45
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C6.apply instruction count: 28
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C6.method1 instruction count: 114
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C6.setPartitionIndex instruction count: 14
+2019-10-01 10:57:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C7.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C7.apply instruction count: 18
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C7.apply instruction count: 12
+2019-10-01 10:57:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C8.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C8.apply instruction count: 43
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C8.apply instruction count: 12
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C8.method1 instruction count: 171
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C8.method2 instruction count: 261
+2019-10-01 10:57:25 root: INFO: optimize (Compile): before: IR size 4: 
+(InsertFields
+  (Ref left)
+  None
+  (`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`
+    (GetField `the entries! [877f12a8827e18f61222c6c8c5fb04a8]`
+      (Ref right))))
+2019-10-01 10:57:25 root: INFO: optimize (Compile): after: IR size 4:
+(InsertFields
+  (Ref left)
+  None
+  (`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`
+    (GetField `the entries! [877f12a8827e18f61222c6c8c5fb04a8]`
+      (Ref right))))
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C9.<init> instruction count: 3
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C9.apply instruction count: 46
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C9.apply instruction count: 22
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C9.method1 instruction count: 235
+2019-10-01 10:57:25 root: INFO: is/hail/codegen/generated/C9.setPartitionIndex instruction count: 14
+2019-10-01 10:57:28 CodeGenerator: INFO: Code generated in 125.966764 ms
+2019-10-01 10:57:28 SparkContext: INFO: Starting job: collect at utils.scala:204
+2019-10-01 10:57:28 DAGScheduler: INFO: Got job 1 (collect at utils.scala:204) with 1 output partitions
+2019-10-01 10:57:28 DAGScheduler: INFO: Final stage: ResultStage 1 (collect at utils.scala:204)
+2019-10-01 10:57:28 DAGScheduler: INFO: Parents of final stage: List()
+2019-10-01 10:57:28 DAGScheduler: INFO: Missing parents: List()
+2019-10-01 10:57:28 DAGScheduler: INFO: Submitting ResultStage 1 (MapPartitionsRDD[23] at collect at utils.scala:204), which has no missing parents
+2019-10-01 10:57:28 MemoryStore: INFO: Block broadcast_5 stored as values in memory (estimated size 49.0 KB, free 910.2 MB)
+2019-10-01 10:57:28 MemoryStore: INFO: Block broadcast_5_piece0 stored as bytes in memory (estimated size 21.2 KB, free 910.2 MB)
+2019-10-01 10:57:28 BlockManagerInfo: INFO: Added broadcast_5_piece0 in memory on localhost:33217 (size: 21.2 KB, free: 912.1 MB)
+2019-10-01 10:57:28 SparkContext: INFO: Created broadcast 5 from broadcast at DAGScheduler.scala:1161
+2019-10-01 10:57:28 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[23] at collect at utils.scala:204) (first 15 tasks are for partitions Vector(0))
+2019-10-01 10:57:28 TaskSchedulerImpl: INFO: Adding task set 1.0 with 1 tasks
+2019-10-01 10:57:28 TaskSetManager: INFO: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 8064 bytes)
+2019-10-01 10:57:28 Executor: INFO: Running task 0.0 in stage 1.0 (TID 1)
+2019-10-01 10:57:28 CodeGenerator: INFO: Code generated in 45.830839 ms
+2019-10-01 10:57:28 CodeGenerator: INFO: Code generated in 193.391857 ms
+2019-10-01 10:57:28 Executor: INFO: Finished task 0.0 in stage 1.0 (TID 1). 56928 bytes result sent to driver
+2019-10-01 10:57:28 TaskSetManager: INFO: Finished task 0.0 in stage 1.0 (TID 1) in 456 ms on localhost (executor driver) (1/1)
+2019-10-01 10:57:28 DAGScheduler: INFO: ResultStage 1 (collect at utils.scala:204) finished in 0,487 s
+2019-10-01 10:57:28 DAGScheduler: INFO: Job 1 finished: collect at utils.scala:204, took 0,493043 s
+2019-10-01 10:57:28 TaskSchedulerImpl: INFO: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-10-01 10:58:11 Hail: WARN: Found differences between requested and initialized parameters. Ignoring requested parameters.
+Param: tmpDir, Provided value: /tmp, Existing value: file:/tmp/hail.uOLH8i7hzbxW
+Param: minBlockSize, Provided value: 1, Existing value: 0
+2019-10-01 10:58:11 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:11 root: INFO: optimize: before: IR size 1: 
+(MatrixRead None False False "{\"name\":\"MatrixNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt\",\"_spec\":null}")
+2019-10-01 10:58:11 root: INFO: optimize: after: IR size 1:
+(MatrixRead None False False "{\"name\":\"MatrixNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt\",\"_spec\":null}")
+2019-10-01 10:58:11 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:11 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:11 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:11 root: INFO: optimize: before: IR size 9: 
+(TableZipUnchecked
+  (TableMapGlobals
+    (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/rows\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[locus,alleles],row:Struct{locus:Locus(GRCh37),alleles:Array[String],rsid:String,qual:Float64,filters:Set[String],info:Struct{AC:Array[Int32],AF:Array[Float64],AN:Int32,BaseQRankSum:Float64,ClippingRankSum:Float64,DP:Int32,DS:Boolean,FS:Float64,HaplotypeScore:Float64,InbreedingCoeff:Float64,MLEAC:Array[Int32],MLEAF:Array[Float64],MQ:Float64,MQ0:Int32,MQRankSum:Float64,QD:Float64,ReadPosRankSum:Float64,set:String}}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}")
+    (InsertFields
+      (Ref global)
+      None
+      (__cols
+        (GetField rows
+          (TableCollect
+            (TableRead Table{global:Struct{},key:[],row:Struct{s:String}} False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/cols\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[s],row:Struct{s:String}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[284]}}}}"))))))
+  (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/entries\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[],row:Struct{`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`:Array[Struct{GT:Call,AD:Array[+Int32],DP:Int32,GQ:Int32,PL:Array[+Int32]}]}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}"))
+2019-10-01 10:58:11 root: INFO: optimize: after: IR size 9:
+(TableZipUnchecked
+  (TableMapGlobals
+    (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/rows\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[locus,alleles],row:Struct{locus:Locus(GRCh37),alleles:Array[String],rsid:String,qual:Float64,filters:Set[String],info:Struct{AC:Array[Int32],AF:Array[Float64],AN:Int32,BaseQRankSum:Float64,ClippingRankSum:Float64,DP:Int32,DS:Boolean,FS:Float64,HaplotypeScore:Float64,InbreedingCoeff:Float64,MLEAC:Array[Int32],MLEAF:Array[Float64],MQ:Float64,MQ0:Int32,MQRankSum:Float64,QD:Float64,ReadPosRankSum:Float64,set:String}}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}")
+    (InsertFields
+      (Ref global)
+      None
+      (__cols
+        (GetField rows
+          (TableCollect
+            (TableRead Table{global:Struct{},key:[],row:Struct{s:String}} False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/cols\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[s],row:Struct{s:String}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[284]}}}}"))))))
+  (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/entries\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[],row:Struct{`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`:Array[Struct{GT:Call,AD:Array[+Int32],DP:Int32,GQ:Int32,PL:Array[+Int32]}]}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}"))
+2019-10-01 10:58:11 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C10.<init> instruction count: 3
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C10.apply instruction count: 18
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C10.apply instruction count: 12
+2019-10-01 10:58:11 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C11.<init> instruction count: 3
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C11.apply instruction count: 43
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C11.apply instruction count: 12
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C11.method1 instruction count: 594
+2019-10-01 10:58:11 root: INFO: is/hail/codegen/generated/C11.method2 instruction count: 997
+2019-10-01 10:58:12 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C12.<init> instruction count: 3
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C12.apply instruction count: 18
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C12.apply instruction count: 12
+2019-10-01 10:58:12 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C13.<init> instruction count: 3
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C13.apply instruction count: 88
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C13.apply instruction count: 12
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C14.<init> instruction count: 3
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C14.apply instruction count: 88
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C14.apply instruction count: 12
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C15.<init> instruction count: 3
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C15.apply instruction count: 51
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C15.apply instruction count: 13
+2019-10-01 10:58:12 SparkContext: INFO: Starting job: collect at RVD.scala:703
+2019-10-01 10:58:12 DAGScheduler: INFO: Got job 2 (collect at RVD.scala:703) with 1 output partitions
+2019-10-01 10:58:12 DAGScheduler: INFO: Final stage: ResultStage 2 (collect at RVD.scala:703)
+2019-10-01 10:58:12 DAGScheduler: INFO: Parents of final stage: List()
+2019-10-01 10:58:12 DAGScheduler: INFO: Missing parents: List()
+2019-10-01 10:58:12 DAGScheduler: INFO: Submitting ResultStage 2 (MapPartitionsRDD[32] at mapPartitions at ContextRDD.scala:190), which has no missing parents
+2019-10-01 10:58:12 MemoryStore: INFO: Block broadcast_6 stored as values in memory (estimated size 7.2 KB, free 910.2 MB)
+2019-10-01 10:58:12 MemoryStore: INFO: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.1 KB, free 910.2 MB)
+2019-10-01 10:58:12 BlockManagerInfo: INFO: Added broadcast_6_piece0 in memory on localhost:33217 (size: 4.1 KB, free: 912.1 MB)
+2019-10-01 10:58:12 SparkContext: INFO: Created broadcast 6 from broadcast at DAGScheduler.scala:1161
+2019-10-01 10:58:12 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[32] at mapPartitions at ContextRDD.scala:190) (first 15 tasks are for partitions Vector(0))
+2019-10-01 10:58:12 TaskSchedulerImpl: INFO: Adding task set 2.0 with 1 tasks
+2019-10-01 10:58:12 TaskSetManager: INFO: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 7653 bytes)
+2019-10-01 10:58:12 Executor: INFO: Running task 0.0 in stage 2.0 (TID 2)
+2019-10-01 10:58:12 Executor: INFO: Finished task 0.0 in stage 2.0 (TID 2). 6466 bytes result sent to driver
+2019-10-01 10:58:12 TaskSetManager: INFO: Finished task 0.0 in stage 2.0 (TID 2) in 39 ms on localhost (executor driver) (1/1)
+2019-10-01 10:58:12 TaskSchedulerImpl: INFO: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2019-10-01 10:58:12 DAGScheduler: INFO: ResultStage 2 (collect at RVD.scala:703) finished in 0,050 s
+2019-10-01 10:58:12 DAGScheduler: INFO: Job 2 finished: collect at RVD.scala:703, took 0,053252 s
+2019-10-01 10:58:12 root: INFO: optimize (Compile): before: IR size 6: 
+(MakeTuple
+  (InsertFields
+    (Ref global)
+    None
+    (__cols
+      (GetField rows
+        (GetField __iruid_4
+          (Ref __iruid_3))))))
+2019-10-01 10:58:12 root: INFO: optimize (Compile): after: IR size 6:
+(MakeTuple
+  (InsertFields
+    (Ref global)
+    None
+    (__cols
+      (GetField rows
+        (GetField __iruid_4
+          (Ref __iruid_3))))))
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C16.<init> instruction count: 3
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C16.apply instruction count: 45
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C16.apply instruction count: 28
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C16.method1 instruction count: 114
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C16.setPartitionIndex instruction count: 14
+2019-10-01 10:58:12 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C17.<init> instruction count: 3
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C17.apply instruction count: 18
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C17.apply instruction count: 12
+2019-10-01 10:58:12 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C18.<init> instruction count: 3
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C18.apply instruction count: 43
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C18.apply instruction count: 12
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C18.method1 instruction count: 171
+2019-10-01 10:58:12 root: INFO: is/hail/codegen/generated/C18.method2 instruction count: 261
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 39
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 13
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 68
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 69
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 48
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 19
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 24
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 1
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 21
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 37
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 23
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 44
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 52
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 53
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 54
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 58
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 27
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 33
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 26
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 17
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 61
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 36
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 7
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 20
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 49
+2019-10-01 10:58:12 BlockManagerInfo: INFO: Removed broadcast_6_piece0 on localhost:33217 in memory (size: 4.1 KB, free: 912.1 MB)
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 6
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 46
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 16
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 3
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 29
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 56
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 22
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 63
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 40
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 67
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 51
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 62
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 41
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 31
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 43
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 59
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 4
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 8
+2019-10-01 10:58:12 BlockManagerInfo: INFO: Removed broadcast_5_piece0 on localhost:33217 in memory (size: 21.2 KB, free: 912.2 MB)
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 32
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 70
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 72
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 50
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 74
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 47
+2019-10-01 10:58:12 BlockManagerInfo: INFO: Removed broadcast_4_piece0 on localhost:33217 in memory (size: 4.1 KB, free: 912.2 MB)
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 28
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 35
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 60
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 0
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 5
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 38
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 15
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 66
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 42
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 73
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 57
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 75
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 11
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 9
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 10
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 12
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 55
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 2
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 65
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 71
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 18
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 34
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 14
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 30
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 45
+2019-10-01 10:58:12 ContextCleaner: INFO: Cleaned accumulator 64
+2019-10-01 10:58:12 CodeGenerator: INFO: Code generated in 63.017003 ms
+2019-10-01 10:58:12 SparkContext: INFO: Starting job: collect at utils.scala:204
+2019-10-01 10:58:12 DAGScheduler: INFO: Got job 3 (collect at utils.scala:204) with 1 output partitions
+2019-10-01 10:58:12 DAGScheduler: INFO: Final stage: ResultStage 3 (collect at utils.scala:204)
+2019-10-01 10:58:12 DAGScheduler: INFO: Parents of final stage: List()
+2019-10-01 10:58:12 DAGScheduler: INFO: Missing parents: List()
+2019-10-01 10:58:12 DAGScheduler: INFO: Submitting ResultStage 3 (MapPartitionsRDD[47] at collect at utils.scala:204), which has no missing parents
+2019-10-01 10:58:12 MemoryStore: INFO: Block broadcast_7 stored as values in memory (estimated size 49.1 KB, free 910.2 MB)
+2019-10-01 10:58:12 MemoryStore: INFO: Block broadcast_7_piece0 stored as bytes in memory (estimated size 21.2 KB, free 910.2 MB)
+2019-10-01 10:58:12 BlockManagerInfo: INFO: Added broadcast_7_piece0 in memory on localhost:33217 (size: 21.2 KB, free: 912.1 MB)
+2019-10-01 10:58:12 SparkContext: INFO: Created broadcast 7 from broadcast at DAGScheduler.scala:1161
+2019-10-01 10:58:12 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[47] at collect at utils.scala:204) (first 15 tasks are for partitions Vector(0))
+2019-10-01 10:58:12 TaskSchedulerImpl: INFO: Adding task set 3.0 with 1 tasks
+2019-10-01 10:58:12 TaskSetManager: INFO: Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 8064 bytes)
+2019-10-01 10:58:12 Executor: INFO: Running task 0.0 in stage 3.0 (TID 3)
+2019-10-01 10:58:13 CodeGenerator: INFO: Code generated in 149.453613 ms
+2019-10-01 10:58:13 Executor: INFO: Finished task 0.0 in stage 3.0 (TID 3). 56928 bytes result sent to driver
+2019-10-01 10:58:13 TaskSetManager: INFO: Finished task 0.0 in stage 3.0 (TID 3) in 241 ms on localhost (executor driver) (1/1)
+2019-10-01 10:58:13 TaskSchedulerImpl: INFO: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2019-10-01 10:58:13 DAGScheduler: INFO: ResultStage 3 (collect at utils.scala:204) finished in 0,253 s
+2019-10-01 10:58:13 DAGScheduler: INFO: Job 3 finished: collect at utils.scala:204, took 0,256113 s
+2019-10-01 10:58:25 Hail: WARN: Found differences between requested and initialized parameters. Ignoring requested parameters.
+Param: tmpDir, Provided value: /tmp, Existing value: file:/tmp/hail.uOLH8i7hzbxW
+Param: minBlockSize, Provided value: 1, Existing value: 0
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: optimize: before: IR size 1: 
+(MatrixRead None False False "{\"name\":\"MatrixNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt\",\"_spec\":null}")
+2019-10-01 10:58:25 root: INFO: optimize: after: IR size 1:
+(MatrixRead None False False "{\"name\":\"MatrixNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt\",\"_spec\":null}")
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: optimize: before: IR size 9: 
+(TableZipUnchecked
+  (TableMapGlobals
+    (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/rows\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[locus,alleles],row:Struct{locus:Locus(GRCh37),alleles:Array[String],rsid:String,qual:Float64,filters:Set[String],info:Struct{AC:Array[Int32],AF:Array[Float64],AN:Int32,BaseQRankSum:Float64,ClippingRankSum:Float64,DP:Int32,DS:Boolean,FS:Float64,HaplotypeScore:Float64,InbreedingCoeff:Float64,MLEAC:Array[Int32],MLEAF:Array[Float64],MQ:Float64,MQ0:Int32,MQRankSum:Float64,QD:Float64,ReadPosRankSum:Float64,set:String}}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}")
+    (InsertFields
+      (Ref global)
+      None
+      (__cols
+        (GetField rows
+          (TableCollect
+            (TableRead Table{global:Struct{},key:[],row:Struct{s:String}} False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/cols\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[s],row:Struct{s:String}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[284]}}}}"))))))
+  (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/entries\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[],row:Struct{`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`:Array[Struct{GT:Call,AD:Array[+Int32],DP:Int32,GQ:Int32,PL:Array[+Int32]}]}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}"))
+2019-10-01 10:58:25 root: INFO: optimize: after: IR size 9:
+(TableZipUnchecked
+  (TableMapGlobals
+    (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/rows\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[locus,alleles],row:Struct{locus:Locus(GRCh37),alleles:Array[String],rsid:String,qual:Float64,filters:Set[String],info:Struct{AC:Array[Int32],AF:Array[Float64],AN:Int32,BaseQRankSum:Float64,ClippingRankSum:Float64,DP:Int32,DS:Boolean,FS:Float64,HaplotypeScore:Float64,InbreedingCoeff:Float64,MLEAC:Array[Int32],MLEAF:Array[Float64],MQ:Float64,MQ0:Int32,MQRankSum:Float64,QD:Float64,ReadPosRankSum:Float64,set:String}}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}")
+    (InsertFields
+      (Ref global)
+      None
+      (__cols
+        (GetField rows
+          (TableCollect
+            (TableRead Table{global:Struct{},key:[],row:Struct{s:String}} False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/cols\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[s],row:Struct{s:String}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[284]}}}}"))))))
+  (TableRead None False "{\"name\":\"TableNativeReader\",\"path\":\"/home/samuel/Pesquisa/sparkhail/inst/extdata/1kg.mt/entries\",\"_spec\":{\"name\":\"TableSpec\",\"file_version\":65536,\"hail_version\":\"0.2.12-9409c0635781\",\"references_rel_path\":\"../references\",\"table_type\":\"Table{global:Struct{},key:[],row:Struct{`the entries! [877f12a8827e18f61222c6c8c5fb04a8]`:Array[Struct{GT:Call,AD:Array[+Int32],DP:Int32,GQ:Int32,PL:Array[+Int32]}]}}\",\"components\":{\"globals\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"../globals/rows\"},\"rows\":{\"name\":\"RVDComponentSpec\",\"rel_path\":\"rows\"},\"partition_counts\":{\"name\":\"PartitionCountsComponentSpec\",\"counts\":[5460,5501]}}}}"))
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C19.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C19.apply instruction count: 18
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C19.apply instruction count: 12
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C20.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C20.apply instruction count: 43
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C20.apply instruction count: 12
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C20.method1 instruction count: 594
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C20.method2 instruction count: 997
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C21.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C21.apply instruction count: 18
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C21.apply instruction count: 12
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C22.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C22.apply instruction count: 88
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C22.apply instruction count: 12
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C23.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C23.apply instruction count: 88
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C23.apply instruction count: 12
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C24.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C24.apply instruction count: 51
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C24.apply instruction count: 13
+2019-10-01 10:58:25 SparkContext: INFO: Starting job: collect at RVD.scala:703
+2019-10-01 10:58:25 DAGScheduler: INFO: Got job 4 (collect at RVD.scala:703) with 1 output partitions
+2019-10-01 10:58:25 DAGScheduler: INFO: Final stage: ResultStage 4 (collect at RVD.scala:703)
+2019-10-01 10:58:25 DAGScheduler: INFO: Parents of final stage: List()
+2019-10-01 10:58:25 DAGScheduler: INFO: Missing parents: List()
+2019-10-01 10:58:25 DAGScheduler: INFO: Submitting ResultStage 4 (MapPartitionsRDD[56] at mapPartitions at ContextRDD.scala:190), which has no missing parents
+2019-10-01 10:58:25 MemoryStore: INFO: Block broadcast_8 stored as values in memory (estimated size 7.2 KB, free 910.2 MB)
+2019-10-01 10:58:25 MemoryStore: INFO: Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.1 KB, free 910.2 MB)
+2019-10-01 10:58:25 BlockManagerInfo: INFO: Added broadcast_8_piece0 in memory on localhost:33217 (size: 4.1 KB, free: 912.1 MB)
+2019-10-01 10:58:25 SparkContext: INFO: Created broadcast 8 from broadcast at DAGScheduler.scala:1161
+2019-10-01 10:58:25 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[56] at mapPartitions at ContextRDD.scala:190) (first 15 tasks are for partitions Vector(0))
+2019-10-01 10:58:25 TaskSchedulerImpl: INFO: Adding task set 4.0 with 1 tasks
+2019-10-01 10:58:25 TaskSetManager: INFO: Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 7653 bytes)
+2019-10-01 10:58:25 Executor: INFO: Running task 0.0 in stage 4.0 (TID 4)
+2019-10-01 10:58:25 Executor: INFO: Finished task 0.0 in stage 4.0 (TID 4). 6509 bytes result sent to driver
+2019-10-01 10:58:25 TaskSetManager: INFO: Finished task 0.0 in stage 4.0 (TID 4) in 24 ms on localhost (executor driver) (1/1)
+2019-10-01 10:58:25 TaskSchedulerImpl: INFO: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2019-10-01 10:58:25 DAGScheduler: INFO: ResultStage 4 (collect at RVD.scala:703) finished in 0,037 s
+2019-10-01 10:58:25 DAGScheduler: INFO: Job 4 finished: collect at RVD.scala:703, took 0,038968 s
+2019-10-01 10:58:25 root: INFO: optimize (Compile): before: IR size 6: 
+(MakeTuple
+  (InsertFields
+    (Ref global)
+    None
+    (__cols
+      (GetField rows
+        (GetField __iruid_7
+          (Ref __iruid_6))))))
+2019-10-01 10:58:25 root: INFO: optimize (Compile): after: IR size 6:
+(MakeTuple
+  (InsertFields
+    (Ref global)
+    None
+    (__cols
+      (GetField rows
+        (GetField __iruid_7
+          (Ref __iruid_6))))))
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C25.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C25.apply instruction count: 45
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C25.apply instruction count: 28
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C25.method1 instruction count: 114
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C25.setPartitionIndex instruction count: 14
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C26.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C26.apply instruction count: 18
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C26.apply instruction count: 12
+2019-10-01 10:58:25 CodecPool: INFO: Got brand-new decompressor [.gz]
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C27.<init> instruction count: 3
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C27.apply instruction count: 43
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C27.apply instruction count: 12
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C27.method1 instruction count: 171
+2019-10-01 10:58:25 root: INFO: is/hail/codegen/generated/C27.method2 instruction count: 261
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 17.461994 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 13.771997 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 11.564629 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 12.483311 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 14.996015 ms
+2019-10-01 10:58:26 SparkContext: INFO: Starting job: collect at utils.scala:204
+2019-10-01 10:58:26 DAGScheduler: INFO: Got job 5 (collect at utils.scala:204) with 1 output partitions
+2019-10-01 10:58:26 DAGScheduler: INFO: Final stage: ResultStage 5 (collect at utils.scala:204)
+2019-10-01 10:58:26 DAGScheduler: INFO: Parents of final stage: List()
+2019-10-01 10:58:26 DAGScheduler: INFO: Missing parents: List()
+2019-10-01 10:58:26 DAGScheduler: INFO: Submitting ResultStage 5 (MapPartitionsRDD[78] at collect at utils.scala:204), which has no missing parents
+2019-10-01 10:58:26 MemoryStore: INFO: Block broadcast_9 stored as values in memory (estimated size 89.8 KB, free 910.1 MB)
+2019-10-01 10:58:26 MemoryStore: INFO: Block broadcast_9_piece0 stored as bytes in memory (estimated size 29.6 KB, free 910.1 MB)
+2019-10-01 10:58:26 BlockManagerInfo: INFO: Added broadcast_9_piece0 in memory on localhost:33217 (size: 29.6 KB, free: 912.1 MB)
+2019-10-01 10:58:26 SparkContext: INFO: Created broadcast 9 from broadcast at DAGScheduler.scala:1161
+2019-10-01 10:58:26 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[78] at collect at utils.scala:204) (first 15 tasks are for partitions Vector(0))
+2019-10-01 10:58:26 TaskSchedulerImpl: INFO: Adding task set 5.0 with 1 tasks
+2019-10-01 10:58:26 TaskSetManager: INFO: Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 8064 bytes)
+2019-10-01 10:58:26 Executor: INFO: Running task 0.0 in stage 5.0 (TID 5)
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 11.483872 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 12.144982 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 8.455921 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 18.362177 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 8.927285 ms
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 10.042322 ms
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 99
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 126
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 77
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 122
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 95
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 100
+2019-10-01 10:58:26 BlockManagerInfo: INFO: Removed broadcast_8_piece0 on localhost:33217 in memory (size: 4.1 KB, free: 912.1 MB)
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 116
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 101
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 87
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 84
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 83
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 93
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 98
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 109
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 118
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 105
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 97
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 119
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 104
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 110
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 82
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 108
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 80
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 92
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 85
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 123
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 106
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 114
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 96
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 103
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 125
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 121
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 79
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 89
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 78
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 107
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 113
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 120
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 90
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 111
+2019-10-01 10:58:26 BlockManagerInfo: INFO: Removed broadcast_7_piece0 on localhost:33217 in memory (size: 21.2 KB, free: 912.1 MB)
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 115
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 81
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 91
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 102
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 117
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 88
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 124
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 94
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 112
+2019-10-01 10:58:26 ContextCleaner: INFO: Cleaned accumulator 86
+2019-10-01 10:58:26 CodeGenerator: INFO: Code generated in 108.700102 ms
+2019-10-01 10:58:27 Executor: INFO: Finished task 0.0 in stage 5.0 (TID 5). 31333 bytes result sent to driver
+2019-10-01 10:58:27 TaskSetManager: INFO: Finished task 0.0 in stage 5.0 (TID 5) in 336 ms on localhost (executor driver) (1/1)
+2019-10-01 10:58:27 TaskSchedulerImpl: INFO: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2019-10-01 10:58:27 DAGScheduler: INFO: ResultStage 5 (collect at utils.scala:204) finished in 0,370 s
+2019-10-01 10:58:27 DAGScheduler: INFO: Job 5 finished: collect at utils.scala:204, took 0,376242 s
+2019-10-01 11:08:46 SparkContext: INFO: Invoking stop() from shutdown hook
+2019-10-01 11:08:46 AbstractConnector: INFO: Stopped Spark@2f034278{HTTP/1.1,[http/1.1]}{127.0.0.1:4040}
+2019-10-01 11:08:46 SparkUI: INFO: Stopped Spark web UI at http://localhost:4040
+2019-10-01 11:08:46 MapOutputTrackerMasterEndpoint: INFO: MapOutputTrackerMasterEndpoint stopped!
+2019-10-01 11:08:46 MemoryStore: INFO: MemoryStore cleared
+2019-10-01 11:08:46 BlockManager: INFO: BlockManager stopped
+2019-10-01 11:08:46 BlockManagerMaster: INFO: BlockManagerMaster stopped
+2019-10-01 11:08:46 OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: INFO: OutputCommitCoordinator stopped!
+2019-10-01 11:08:46 SparkContext: INFO: Successfully stopped SparkContext
+2019-10-01 11:08:46 ShutdownHookManager: INFO: Shutdown hook called
+2019-10-01 11:08:46 ShutdownHookManager: INFO: Deleting directory /tmp/spark-c127767c-f2b2-4761-bcc0-970c4b549359
+2019-10-01 11:08:46 ShutdownHookManager: INFO: Deleting directory /tmp/spark-237ffd83-63a5-42df-ba00-125258b19a8c

@@ -1,0 +1,231 @@
+19/08/07 13:02:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/08/07 13:02:51 INFO SparkContext: Running Spark version 2.4.0
+19/08/07 13:02:52 INFO SparkContext: Submitted application: sparklyr
+19/08/07 13:02:52 INFO SecurityManager: Changing view acls to: samuel
+19/08/07 13:02:52 INFO SecurityManager: Changing modify acls to: samuel
+19/08/07 13:02:52 INFO SecurityManager: Changing view acls groups to: 
+19/08/07 13:02:52 INFO SecurityManager: Changing modify acls groups to: 
+19/08/07 13:02:52 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(samuel); groups with view permissions: Set(); users  with modify permissions: Set(samuel); groups with modify permissions: Set()
+19/08/07 13:02:52 INFO Utils: Successfully started service 'sparkDriver' on port 46433.
+19/08/07 13:02:52 INFO SparkEnv: Registering MapOutputTracker
+19/08/07 13:02:53 INFO SparkEnv: Registering BlockManagerMaster
+19/08/07 13:02:53 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/08/07 13:02:53 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/08/07 13:02:53 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-f2365750-72b3-4a77-b50a-5c96e0003f8e
+19/08/07 13:02:53 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+19/08/07 13:02:53 INFO SparkEnv: Registering OutputCommitCoordinator
+19/08/07 13:02:54 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/08/07 13:02:54 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://localhost:4040
+19/08/07 13:02:54 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/sparkhail-2.4-2.11.jar at spark://localhost:46433/jars/sparkhail-2.4-2.11.jar with timestamp 1565193774479
+19/08/07 13:02:54 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/hail-all-spark.jar at spark://localhost:46433/jars/hail-all-spark.jar with timestamp 1565193774480
+19/08/07 13:02:54 INFO SparkContext: Added JAR file:/home/samuel/R/x86_64-pc-linux-gnu-library/3.6/sparklyr/java/sparklyr-2.3-2.11.jar at spark://localhost:46433/jars/sparklyr-2.3-2.11.jar with timestamp 1565193774480
+19/08/07 13:02:54 INFO Executor: Starting executor ID driver on host localhost
+19/08/07 13:02:55 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35807.
+19/08/07 13:02:55 INFO NettyBlockTransferService: Server created on localhost:35807
+19/08/07 13:02:55 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/08/07 13:02:55 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 35807, None)
+19/08/07 13:02:55 INFO BlockManagerMasterEndpoint: Registering block manager localhost:35807 with 912.3 MB RAM, BlockManagerId(driver, localhost, 35807, None)
+19/08/07 13:02:55 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 35807, None)
+19/08/07 13:02:55 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 35807, None)
+19/08/07 13:04:23 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/08/07 13:04:24 INFO SparkContext: Running Spark version 2.4.0
+19/08/07 13:04:24 INFO SparkContext: Submitted application: sparklyr
+19/08/07 13:04:24 INFO SecurityManager: Changing view acls to: samuel
+19/08/07 13:04:24 INFO SecurityManager: Changing modify acls to: samuel
+19/08/07 13:04:24 INFO SecurityManager: Changing view acls groups to: 
+19/08/07 13:04:24 INFO SecurityManager: Changing modify acls groups to: 
+19/08/07 13:04:24 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(samuel); groups with view permissions: Set(); users  with modify permissions: Set(samuel); groups with modify permissions: Set()
+19/08/07 13:04:24 INFO Utils: Successfully started service 'sparkDriver' on port 40695.
+19/08/07 13:04:24 INFO SparkEnv: Registering MapOutputTracker
+19/08/07 13:04:24 INFO SparkEnv: Registering BlockManagerMaster
+19/08/07 13:04:24 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/08/07 13:04:24 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/08/07 13:04:24 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e25af09e-6d28-402d-b99c-6b9436b70e06
+19/08/07 13:04:24 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+19/08/07 13:04:24 INFO SparkEnv: Registering OutputCommitCoordinator
+19/08/07 13:04:25 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/08/07 13:04:25 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://localhost:4040
+19/08/07 13:04:25 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/sparkhail-2.4-2.11.jar at spark://localhost:40695/jars/sparkhail-2.4-2.11.jar with timestamp 1565193865160
+19/08/07 13:04:25 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/hail-all-spark.jar at spark://localhost:40695/jars/hail-all-spark.jar with timestamp 1565193865161
+19/08/07 13:04:25 INFO SparkContext: Added JAR file:/home/samuel/R/x86_64-pc-linux-gnu-library/3.6/sparklyr/java/sparklyr-2.3-2.11.jar at spark://localhost:40695/jars/sparklyr-2.3-2.11.jar with timestamp 1565193865161
+19/08/07 13:04:25 INFO Executor: Starting executor ID driver on host localhost
+19/08/07 13:04:25 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44585.
+19/08/07 13:04:25 INFO NettyBlockTransferService: Server created on localhost:44585
+19/08/07 13:04:25 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/08/07 13:04:25 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 44585, None)
+19/08/07 13:04:25 INFO BlockManagerMasterEndpoint: Registering block manager localhost:44585 with 912.3 MB RAM, BlockManagerId(driver, localhost, 44585, None)
+19/08/07 13:04:25 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 44585, None)
+19/08/07 13:04:25 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 44585, None)
+19/08/07 13:04:25 INFO SharedState: loading hive config file: file:/home/samuel/spark/spark-2.4.0-bin-hadoop2.7/conf/hive-site.xml
+19/08/07 13:04:25 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/samuel/Pesquisa/sparkhail/tests/testthat/spark-warehouse').
+19/08/07 13:04:25 INFO SharedState: Warehouse path is 'file:/home/samuel/Pesquisa/sparkhail/tests/testthat/spark-warehouse'.
+19/08/07 13:04:26 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/08/07 13:04:27 INFO HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+19/08/07 13:04:28 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/08/07 13:04:28 INFO ObjectStore: ObjectStore, initialize called
+19/08/07 13:04:28 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/08/07 13:04:28 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/08/07 13:04:29 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/08/07 13:04:30 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:04:30 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:04:31 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:04:31 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:04:31 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/08/07 13:04:31 INFO ObjectStore: Initialized ObjectStore
+19/08/07 13:04:31 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+19/08/07 13:04:31 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+19/08/07 13:04:31 INFO HiveMetaStore: Added admin role in metastore
+19/08/07 13:04:31 INFO HiveMetaStore: Added public role in metastore
+19/08/07 13:04:31 INFO HiveMetaStore: No user is added in admin role, since config is empty
+19/08/07 13:04:31 INFO HiveMetaStore: 0: get_all_databases
+19/08/07 13:04:31 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_all_databases	
+19/08/07 13:04:31 INFO HiveMetaStore: 0: get_functions: db=default pat=*
+19/08/07 13:04:31 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+19/08/07 13:04:31 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:04:31 INFO SessionState: Created local directory: /tmp/e7a2fe64-2178-405a-975e-c16e4728e9cf_resources
+19/08/07 13:04:31 INFO SessionState: Created HDFS directory: /tmp/hive/samuel/e7a2fe64-2178-405a-975e-c16e4728e9cf
+19/08/07 13:04:31 INFO SessionState: Created local directory: /tmp/samuel/e7a2fe64-2178-405a-975e-c16e4728e9cf
+19/08/07 13:04:31 INFO SessionState: Created HDFS directory: /tmp/hive/samuel/e7a2fe64-2178-405a-975e-c16e4728e9cf/_tmp_space.db
+19/08/07 13:04:31 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is file:/home/samuel/Pesquisa/sparkhail/tests/testthat/spark-warehouse
+19/08/07 13:04:31 INFO HiveMetaStore: 0: get_database: default
+19/08/07 13:04:31 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/07 13:04:31 INFO HiveMetaStore: 0: get_database: global_temp
+19/08/07 13:04:31 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: global_temp	
+19/08/07 13:04:31 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+19/08/07 13:04:31 INFO HiveMetaStore: 0: get_database: default
+19/08/07 13:04:31 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/07 13:04:31 INFO HiveMetaStore: 0: get_database: default
+19/08/07 13:04:31 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/07 13:04:31 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/08/07 13:04:31 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/08/07 13:04:32 INFO CodeGenerator: Code generated in 191.47395 ms
+19/08/07 13:09:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/08/07 13:09:33 INFO SparkContext: Running Spark version 2.4.0
+19/08/07 13:09:33 INFO SparkContext: Submitted application: sparklyr
+19/08/07 13:09:33 INFO SecurityManager: Changing view acls to: samuel
+19/08/07 13:09:33 INFO SecurityManager: Changing modify acls to: samuel
+19/08/07 13:09:33 INFO SecurityManager: Changing view acls groups to: 
+19/08/07 13:09:33 INFO SecurityManager: Changing modify acls groups to: 
+19/08/07 13:09:33 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(samuel); groups with view permissions: Set(); users  with modify permissions: Set(samuel); groups with modify permissions: Set()
+19/08/07 13:09:33 INFO Utils: Successfully started service 'sparkDriver' on port 33895.
+19/08/07 13:09:34 INFO SparkEnv: Registering MapOutputTracker
+19/08/07 13:09:34 INFO SparkEnv: Registering BlockManagerMaster
+19/08/07 13:09:34 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/08/07 13:09:34 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/08/07 13:09:34 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-2fa357b5-ca33-46bf-a60c-09e05d7273c9
+19/08/07 13:09:34 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+19/08/07 13:09:34 INFO SparkEnv: Registering OutputCommitCoordinator
+19/08/07 13:09:34 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/08/07 13:09:34 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://localhost:4040
+19/08/07 13:09:34 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/sparkhail-2.4-2.11.jar at spark://localhost:33895/jars/sparkhail-2.4-2.11.jar with timestamp 1565194174384
+19/08/07 13:09:34 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/hail-all-spark.jar at spark://localhost:33895/jars/hail-all-spark.jar with timestamp 1565194174385
+19/08/07 13:09:34 INFO SparkContext: Added JAR file:/home/samuel/R/x86_64-pc-linux-gnu-library/3.6/sparklyr/java/sparklyr-2.3-2.11.jar at spark://localhost:33895/jars/sparklyr-2.3-2.11.jar with timestamp 1565194174385
+19/08/07 13:09:34 INFO Executor: Starting executor ID driver on host localhost
+19/08/07 13:09:34 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39915.
+19/08/07 13:09:34 INFO NettyBlockTransferService: Server created on localhost:39915
+19/08/07 13:09:34 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/08/07 13:09:34 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 39915, None)
+19/08/07 13:09:34 INFO BlockManagerMasterEndpoint: Registering block manager localhost:39915 with 912.3 MB RAM, BlockManagerId(driver, localhost, 39915, None)
+19/08/07 13:09:34 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 39915, None)
+19/08/07 13:09:34 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 39915, None)
+19/08/07 13:09:34 INFO SharedState: loading hive config file: file:/home/samuel/spark/spark-2.4.0-bin-hadoop2.7/conf/hive-site.xml
+19/08/07 13:09:34 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/samuel/Pesquisa/sparkhail/tests/testthat/spark-warehouse').
+19/08/07 13:09:34 INFO SharedState: Warehouse path is 'file:/home/samuel/Pesquisa/sparkhail/tests/testthat/spark-warehouse'.
+19/08/07 13:09:35 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+19/08/07 13:09:36 INFO HiveUtils: Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+19/08/07 13:09:37 INFO HiveMetaStore: 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+19/08/07 13:09:37 INFO ObjectStore: ObjectStore, initialize called
+19/08/07 13:09:37 INFO Persistence: Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+19/08/07 13:09:37 INFO Persistence: Property datanucleus.cache.level2 unknown - will be ignored
+19/08/07 13:09:38 INFO ObjectStore: Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+19/08/07 13:09:39 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:09:39 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:09:40 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:09:40 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:09:40 INFO MetaStoreDirectSql: Using direct SQL, underlying DB is DERBY
+19/08/07 13:09:40 INFO ObjectStore: Initialized ObjectStore
+19/08/07 13:09:40 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+19/08/07 13:09:40 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+19/08/07 13:09:40 INFO HiveMetaStore: Added admin role in metastore
+19/08/07 13:09:40 INFO HiveMetaStore: Added public role in metastore
+19/08/07 13:09:40 INFO HiveMetaStore: No user is added in admin role, since config is empty
+19/08/07 13:09:40 INFO HiveMetaStore: 0: get_all_databases
+19/08/07 13:09:40 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_all_databases	
+19/08/07 13:09:40 INFO HiveMetaStore: 0: get_functions: db=default pat=*
+19/08/07 13:09:40 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+19/08/07 13:09:40 INFO Datastore: The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+19/08/07 13:09:40 INFO SessionState: Created local directory: /tmp/2bef4ce5-582d-4a5b-8bf2-bf0e4a938476_resources
+19/08/07 13:09:40 INFO SessionState: Created HDFS directory: /tmp/hive/samuel/2bef4ce5-582d-4a5b-8bf2-bf0e4a938476
+19/08/07 13:09:40 INFO SessionState: Created local directory: /tmp/samuel/2bef4ce5-582d-4a5b-8bf2-bf0e4a938476
+19/08/07 13:09:40 INFO SessionState: Created HDFS directory: /tmp/hive/samuel/2bef4ce5-582d-4a5b-8bf2-bf0e4a938476/_tmp_space.db
+19/08/07 13:09:40 INFO HiveClientImpl: Warehouse location for Hive client (version 1.2.2) is file:/home/samuel/Pesquisa/sparkhail/tests/testthat/spark-warehouse
+19/08/07 13:09:40 INFO HiveMetaStore: 0: get_database: default
+19/08/07 13:09:40 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/07 13:09:40 INFO HiveMetaStore: 0: get_database: global_temp
+19/08/07 13:09:40 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: global_temp	
+19/08/07 13:09:40 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+19/08/07 13:09:40 INFO HiveMetaStore: 0: get_database: default
+19/08/07 13:09:40 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/07 13:09:40 INFO HiveMetaStore: 0: get_database: default
+19/08/07 13:09:40 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_database: default	
+19/08/07 13:09:40 INFO HiveMetaStore: 0: get_tables: db=default pat=*
+19/08/07 13:09:40 INFO audit: ugi=samuel	ip=unknown-ip-addr	cmd=get_tables: db=default pat=*	
+19/08/07 13:09:41 INFO CodeGenerator: Code generated in 183.304785 ms
+19/08/07 13:17:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/08/07 13:17:29 INFO SparkContext: Running Spark version 2.4.0
+19/08/07 13:17:29 INFO SparkContext: Submitted application: sparklyr
+19/08/07 13:17:29 INFO SecurityManager: Changing view acls to: samuel
+19/08/07 13:17:29 INFO SecurityManager: Changing modify acls to: samuel
+19/08/07 13:17:29 INFO SecurityManager: Changing view acls groups to: 
+19/08/07 13:17:29 INFO SecurityManager: Changing modify acls groups to: 
+19/08/07 13:17:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(samuel); groups with view permissions: Set(); users  with modify permissions: Set(samuel); groups with modify permissions: Set()
+19/08/07 13:17:29 INFO Utils: Successfully started service 'sparkDriver' on port 38559.
+19/08/07 13:17:29 INFO SparkEnv: Registering MapOutputTracker
+19/08/07 13:17:29 INFO SparkEnv: Registering BlockManagerMaster
+19/08/07 13:17:29 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/08/07 13:17:29 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/08/07 13:17:29 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-49e9d4c1-263f-466e-baa6-9be7c10c04ec
+19/08/07 13:17:29 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+19/08/07 13:17:29 INFO SparkEnv: Registering OutputCommitCoordinator
+19/08/07 13:17:29 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/08/07 13:17:29 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://localhost:4040
+19/08/07 13:17:29 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/sparkhail-2.4-2.11.jar at spark://localhost:38559/jars/sparkhail-2.4-2.11.jar with timestamp 1565194649558
+19/08/07 13:17:29 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/hail-all-spark.jar at spark://localhost:38559/jars/hail-all-spark.jar with timestamp 1565194649559
+19/08/07 13:17:29 INFO SparkContext: Added JAR file:/home/samuel/R/x86_64-pc-linux-gnu-library/3.6/sparklyr/java/sparklyr-2.3-2.11.jar at spark://localhost:38559/jars/sparklyr-2.3-2.11.jar with timestamp 1565194649559
+19/08/07 13:17:29 INFO Executor: Starting executor ID driver on host localhost
+19/08/07 13:17:29 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34305.
+19/08/07 13:17:29 INFO NettyBlockTransferService: Server created on localhost:34305
+19/08/07 13:17:29 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/08/07 13:17:29 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 34305, None)
+19/08/07 13:17:29 INFO BlockManagerMasterEndpoint: Registering block manager localhost:34305 with 912.3 MB RAM, BlockManagerId(driver, localhost, 34305, None)
+19/08/07 13:17:29 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 34305, None)
+19/08/07 13:17:29 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 34305, None)
+19/08/07 14:32:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+19/08/07 14:32:18 INFO SparkContext: Running Spark version 2.4.0
+19/08/07 14:32:18 INFO SparkContext: Submitted application: sparklyr
+19/08/07 14:32:18 INFO SecurityManager: Changing view acls to: samuel
+19/08/07 14:32:18 INFO SecurityManager: Changing modify acls to: samuel
+19/08/07 14:32:18 INFO SecurityManager: Changing view acls groups to: 
+19/08/07 14:32:18 INFO SecurityManager: Changing modify acls groups to: 
+19/08/07 14:32:18 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(samuel); groups with view permissions: Set(); users  with modify permissions: Set(samuel); groups with modify permissions: Set()
+19/08/07 14:32:18 INFO Utils: Successfully started service 'sparkDriver' on port 40117.
+19/08/07 14:32:18 INFO SparkEnv: Registering MapOutputTracker
+19/08/07 14:32:18 INFO SparkEnv: Registering BlockManagerMaster
+19/08/07 14:32:18 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+19/08/07 14:32:18 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+19/08/07 14:32:18 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-dedd8fbe-c9be-4bbf-9725-b06e52bf84d4
+19/08/07 14:32:18 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+19/08/07 14:32:18 INFO SparkEnv: Registering OutputCommitCoordinator
+19/08/07 14:32:19 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+19/08/07 14:32:19 INFO SparkUI: Bound SparkUI to 127.0.0.1, and started at http://localhost:4040
+19/08/07 14:32:19 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/sparkhail-2.4-2.11.jar at spark://localhost:40117/jars/sparkhail-2.4-2.11.jar with timestamp 1565199139150
+19/08/07 14:32:19 INFO SparkContext: Added JAR file:///home/samuel/Pesquisa/sparkhail/inst/java/hail-all-spark.jar at spark://localhost:40117/jars/hail-all-spark.jar with timestamp 1565199139152
+19/08/07 14:32:19 INFO SparkContext: Added JAR file:/home/samuel/R/x86_64-pc-linux-gnu-library/3.6/sparklyr/java/sparklyr-2.3-2.11.jar at spark://localhost:40117/jars/sparklyr-2.3-2.11.jar with timestamp 1565199139152
+19/08/07 14:32:19 INFO Executor: Starting executor ID driver on host localhost
+19/08/07 14:32:19 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39239.
+19/08/07 14:32:19 INFO NettyBlockTransferService: Server created on localhost:39239
+19/08/07 14:32:19 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+19/08/07 14:32:19 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 39239, None)
+19/08/07 14:32:19 INFO BlockManagerMasterEndpoint: Registering block manager localhost:39239 with 912.3 MB RAM, BlockManagerId(driver, localhost, 39239, None)
+19/08/07 14:32:19 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 39239, None)
+19/08/07 14:32:19 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 39239, None)
